@@ -26,9 +26,15 @@ models.Base.metadata.create_all(bind=engine)
 app = FastAPI(title="PHRELIS Hospital OS")
 
 # CORS Setup - Essential for Frontend (3000) to talk to Backend (8000)
+
+origins = [
+    "http://localhost:3000",
+    "https://your-project-name.vercel.app", # Replace with your actual Vercel URL
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=origins, # Use ["*"] for a quick test if stuck
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
