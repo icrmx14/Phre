@@ -1,0 +1,29 @@
+
+
+pandas
+numpy
+scikit-learn
+python-multipart
+httpx
+websockets
+# --- Core Web Server ---
+fastapi==0.109.0
+uvicorn==0.27.0
+python-multipart==0.0.6
+
+# --- Database Layer ---
+sqlalchemy==2.0.25
+
+# --- AI & Intelligence Layer ---
+langchain==0.1.0
+langchain-core==0.1.10
+langchain-google-genai==0.0.6
+google-generativeai==0.3.2
+python-dotenv==1.0.0
+
+# --- File Processing ---
+PyPDF2==3.0.1
+
+# --- Utilities ---
+pydantic==2.5.3
+websockets==12.0
