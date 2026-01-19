@@ -253,7 +253,7 @@ export default function DashboardPage() {
           <MetricsGrid data={data} isSimulating={isSimulating} />
 
           <section className="space-y-14 pb-10">
-            <MindPredictions isSimulating={isSimulating} />
+            {(MindPredictions as any)({ isSimulating })}
 
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-14">
               <LiveHeatmap
